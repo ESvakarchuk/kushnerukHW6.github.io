@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="top_menu_wrapper">
+            <address class="phones_wrapper">
+        <div class="circle_layer top_menu_phone_circle"><img src="img/phone.png" alt="phone image"></div><p>(044)123-45-67 (044)567-89-10</p>
+      </address>
+            <form class="authorization_form_wrapper" action="index.html" method="post">
+                <img src="img/authoriz.png" alt="user icon">
+                <input type="text" name="username" placeholder="логин">
+                <input type="password" name="password" placeholder="пароль">
+                <input type="submit" name="login" value="вход">
+                <span class="decoration_border"></span>
+                <a class="registration_text_font" href="#">регистрация</a>
+                <a class="forgot_pwd_text_font" href="#">забыли пароль?</a>
+            </form>
+            <div class="site_nav_box">
+                <a class="home_link" href=""><img src="img/home.png" alt="home"></a>
+                <a class="sitemap_link" href=""><img src="img/sitemap.png" alt="site map"></a>
+                <a class="message_link" href=""><img src="img/message.png" alt="message"></a>
+            </div>
+        </div>
+        <div class="main_banner">
+            <a href=""><img src="img/main-banner.png" alt="main banner"></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="submenu_1"><a class="menu_about" href="">О КОМПАНИ</a></li>
+                <li class="submenu_2"><a class="menu_payment" href="">ОПЛАТА</a></li>
+                <li class="submenu_3"><a class="menu_delivery" href="">ДОСТАВКА</a></li>
+                <li class="submenu_4"><a class="menu_articles" href="">СТАТЬИ</a></li>
+                <li class="submenu_5"><a class="menu_contacts" href="">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="cart">
+                <a href=""><img src="img/cart.png" alt="cart image"></a>
+                <p><span class="goods">товаров:</span><span class="amount">0</span><span class="sum_text">на сумму:</span><span class="total">0,00 грн.</span></p>
+            </div>
+        </nav>
+    </header>
+    <div class="search_bar">
+        <div class="search_panel_1">
+            <p><span class="search_disk">Диски:</span><span class="search_auto">Поиск по автомобилю</span><span class="search_tires">Шины:</span></p>
+            <form action="index.html" method="get">
+                <label class="disk_mark_label"><span class="label_font">Марка</span><span class="label_gray_font">авто:</span>
+          <select name="disk_mark">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          </label>
+                <label class="tires_mark_label"><span class="label_font">Марка</span><span class="label_gray_font">авто:</span>
+          <select name="tire_mark">
+          <option value="5">1</option>
+          <option value="6">2</option>
+          <option value="7">3</option>
+          <option value="8">4</option>
+          </select>
+          </label>
+                <label class="disk_model_label" for="disk_model_1"><span class="label_font">Модель</span><span class="label_gray_font">автомобиля:</span></label>
+                <select name="disk_model" id="disk_model_1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+                <label class="tires_model_label" for="tire_model_1"><span class="label_font">Модель</span><span class="label_gray_font">автомобиля:</span></label>
+                <select name="tire_model" id="tire_model_1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+                <label class="disk_year_label" for="disk_year_1"><span class="label_font">Год выпуска</span><span class="label_gray_font">автомобиля:</span></label>
+                <select name="disk_year" id="disk_year_1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          </select>
+                <label class="tires_year_label" for="tire_year_1"><span class="label_font">Год выпуска</span><span class="label_gray_font">автомобиля:</span></label>
+                <select name="tire_year" id="tire_year_1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+                <label class="disk_complectation_label"><span class="label_font">Комплектация:</span>
+      <select name="disk_complectation">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      </label>
+                <label class="tires_complectation_label"><span class="label_font">Комплектация:</span>
+          <select name="tire_complectation">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          </label>
+                <input type="submit" value="ПОИСК..." id="search_button">
+            </form>
+        </div>
+    </div>
+    <div class="container_box">
+
+        <aside class="left_box">
+          <h2 class="left_box_h2"><span class="circle_layer h2_circle_span"><img src="img/catalog.png" alt="catalog img"></span><span class="h2_text_span">КАТАЛОГ ПРОДУКЦИИ:</span></h2>
+          <h3 class="left_box_h3 left_box_h3_tires"><img src="img/CatalogDot.png" alt="dot img"><span class="h3_text_span">ШИНЫ</span></h3>
+          <ul class="left_box_nav left_box_tires_nav">
+            <li class="catalog_link_1"><a href=""><span class="hovered_text">Наименование 1</span></a></li>
+            <li class="catalog_link_2"><a href=""><span class="hovered_text">Наименование 2</span></a></li>
+            <li class="catalog_link_3"><a href=""><span class="hovered_text">Наименование 3</span></a></li>
+            <li class="catalog_link_4"><a href=""><span class="hovered_text">Наименование 4</span></a></li>
+          </ul>
+          <h3 class="left_box_h3 left_box_h3_disk"><img src="img/CatalogDot.png" alt="dot img"><span class="h3_text_position_fix">ДИСКИ</span></h3>
+          <ul class="left_box_nav left_box_disk_nav">
+            <li class="catalog_link_1"><a href=""><span class="hovered_text">Наименование 1</span></a></li>
+            <li class="catalog_link_2"><a href=""><span class="hovered_text">Наименование 2</span></a></li>
+            <li class="catalog_link_3"><a href=""><span class="hovered_text">Наименование 3</span></a></li>
+            <li class="catalog_link_4"><a href=""><span class="hovered_text">Наименование 4</span></a></li>
+          </ul>
+          <h3 class="left_box_h3 left_box_h3_bolts"><img src="img/CatalogDot.png" alt="dot img"><span class="h3_text_position_fix">БОЛТЫ</span></h3>
+          <ul class="left_box_nav left_box_bolts_nav">
+            <li class="catalog_link_1"><a href=""><span class="hovered_text">Наименование 1</span></a></li>
+            <li class="catalog_link_2"><a href=""><span class="hovered_text">Наименование 2</span></a></li>
+            <li class="catalog_link_3"><a href=""><span class="hovered_text">Наименование 3</span></a></li>
+            <li class="catalog_link_4"><a href=""><span class="hovered_text">Наименование 4</span></a></li>
+          </ul>
+        </aside>
+
+        <main>
+            <figure class="product_1">
+              <figcaption>
+                <p class="product_name_font product_1_name"><a href="#">Goodyear</a></p>
+                <p class="product_type_font product_1_type">Ultra Grip Extreme</p>
+                <div class="img_wrapper"><img src="img/Goodyear.png" alt="product image"></div>
+                <span class="product_price_font column_1_price_posfix">90.00</span><span class="column_1_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_2">
+              <figcaption>
+                <p class="product_name_font product_2_name"><a href="#">Nokian</a></p>
+                <p class="product_type_font product_2_type">Hakkapeliitta R</p>
+                <div class="img_wrapper"><img src="img/Nokian.png" alt="product image"></div>
+                <span class="product_price_font column_2_price_posfix">115.00</span><span class="column_2_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_3">
+              <figcaption>
+                <p class="product_name_font product_3_name"><a href="#">Hankook</a></p>
+                <p class="product_type_font product_3_type">K 708 155/65 R14</p>
+                <div class="img_wrapper"><img src="img/Hankook.png" alt="product image"></div>
+                <span class="product_price_font column_3_price_posfix">393.00</span><span class="column_3_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_4">
+              <figcaption>
+                <p class="product_name_font product_4_name"><a href="#">Goodyear</a></p>
+                <p class="product_type_font product_4_type">Ultra Grip Extreme</p>
+                <div class="img_wrapper"><img src="img/Goodyear.png" alt="product image"></div>
+                <span class="product_price_font column_1_price_posfix">90.00</span><span class="column_1_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_5">
+              <figcaption>
+                <p class="product_name_font product_5_name"><a href="#">Nokian</a></p>
+                <p class="product_type_font product_5_type">Hakkapeliitta R</p>
+                <div class="img_wrapper"><img src="img/Nokian.png" alt="product image"></div>
+                <span class="product_price_font column_2_price_posfix">115.00</span><span class="column_2_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_6">
+              <figcaption>
+                <p class="product_name_font product_6_name"><a href="#">Hankook</a></p>
+                <p class="product_type_font product_6_type">K 708 155/65 R14</p>
+                <div class="img_wrapper"><img src="img/Hankook.png" alt="product image"></div>
+                <span class="product_price_font column_3_price_posfix">393.00</span><span class="column_3_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_7">
+              <figcaption>
+                <p class="product_name_font product_7_name"><a href="#">Goodyear</a></p>
+                <p class="product_type_font product_7_type">Ultra Grip Extreme</p>
+                <div class="img_wrapper"><img src="img/Goodyear.png" alt="product image"></div>
+                <span class="product_price_font column_1_price_posfix">90.00</span><span class="column_1_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_8">
+              <figcaption>
+                <p class="product_name_font product_8_name"><a href="#">Nokian</a></p>
+                <p class="product_type_font product_8_type">Hakkapeliitta R</p>
+                <div class="img_wrapper"><img src="img/Nokian.png" alt="product image"></div>
+                <span class="product_price_font column_2_price_posfix">115.00</span><span class="column_2_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+            <figure class="product_9">
+              <figcaption>
+                <p class="product_name_font product_9_name"><a href="#">Hankook</a></p>
+                <p class="product_type_font product_9_type">K 708 155/65 R14</p>
+                <div class="img_wrapper"><img src="img/Hankook.png" alt="product image"></div>
+                <span class="product_price_font column_3_price_posfix">393.00</span><span class="column_3_posfix price_currency">грн.</span>
+              </figcaption>
+            </figure>
+        </main>
+
+        <aside class="right_box">
+          <h2 class="right_box_h2"><span class="circle_layer h2_circle_span"><img src="img/catalog.png" alt="catalog img"></span><span class="h2_text_span">БРЕНДЫ:</span></h2>
+          <h3 class="right_box_h3 right_box_h3_tires"><img src="img/CatalogDot.png" alt="dot img"><span class="h3_text_span">ШИНЫ</span></h3>
+          <form action="index.html" method="get">
+            <label class="brand_checkbox_1"><input type="checkbox" name="tire_brand" value="t1"><span class="checkbox_text">Бренд 1</span></label>
+            <label class="brand_checkbox_2"><input type="checkbox" name="tire_brand" value="t2"><span class="checkbox_text">Бренд 2</span></label>
+            <label class="brand_checkbox_3"><input type="checkbox" name="tire_brand" value="t3"><span class="checkbox_text">Бренд 3</span></label>
+          <h3 class="right_box_h3 right_box_h3_disk"><img src="img/CatalogDot.png" alt="dot img"><span class="h3_text_position_fix">ДИСКИ</span></h3>
+            <label class="brand_checkbox_4"><input type="checkbox" name="disk_brand" value="d1"><span class="checkbox_text">Бренд 1</span></label>
+            <label class="brand_checkbox_5"><input type="checkbox" name="disk_brand" value="d2"><span class="checkbox_text">Бренд 2</span></label>
+            <label class="brand_checkbox_6"><input type="checkbox" name="disk_brand" value="d3"><span class="checkbox_text">Бренд 3</span></label>
+            <input type="submit" value="ВЫБРАТЬ">
+          </form>
+        </aside>
+
+    </div>
+    <div class="brand_box">
+        <ul class="brand_search">
+            <li class="brand_item_1">
+                <a href=""><img src="img/ToyoTires.png" alt="toyo tires"></a>
+            </li>
+            <li class="brand_item_2">
+                <a href=""><img src="img/Bridgestone.png" alt="bridgestone"></a>
+            </li>
+            <li class="brand_item_3">
+                <a href=""><img src="img/ContinentalTire.png" alt="continental tire"></a>
+            </li>
+            <li class="brand_item_4">
+                <a href=""><img src="img/Gooper.png" alt="gooper tires"></a>
+            </li>
+            <li class="brand_item_5">
+                <a href=""><img src="img/Avon.png" alt="avon tires"></a>
+            </li>
+            <li class="brand_item_6">
+                <a href=""><img src="img/TireFactory.png" alt="tire factory"></a>
+            </li>
+            <li class="brand_item_7">
+                <a href=""><img src="img/Pirelli.png" alt="pirelli"></a>
+            </li>
+            <li class="brand_item_8">
+                <a href=""><img src="img/Dunlop.png" alt="dunlop"></a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <ul class="footer_menu">
+            <li class="footer_menu_item_1"><a href="">О компании </a></li>
+            <li class="footer_menu_item_2"><a href="">| Доставка</a></li>
+            <li class="footer_menu_item_3"><a href="">| Статьи</a></li>
+            <li class="footer_menu_item_4"><a href="">| Контакты</a></li>
+        </ul>
+        <small>Создание сайта © Global Vision</small>
+    </footer>
+</body>
+
+</html>

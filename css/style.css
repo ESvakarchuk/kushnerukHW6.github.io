@@ -1,0 +1,1219 @@
+body {
+    width: 1000px;
+    height: 1310px;
+    margin: 0 auto;
+}
+
+.circle_layer {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #f10000;
+    background-image: linear-gradient(to top, #206988 0%, #114165 59%, #0c3256 100%);
+}
+
+/*     1. TOP MENU STYLE&SIZE (phones, authorization, sitenav)     */
+
+.top_menu_wrapper {
+    width: 910px;
+    height: 40px;
+    margin: 10px auto 0 auto;
+}
+
+/*     1.1 Phones box and internal components of the wrapper      */
+
+.phones_wrapper {
+    float: left;
+    height: 100%;
+}
+
+.phones_wrapper>p {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: 11px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.top_menu_phone_circle {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    left: 7px;
+}
+
+.top_menu_phone_circle>img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*     1.2 Authorization form box and internal components of the wrapper      */
+
+.authorization_form_wrapper {
+    float: left;
+    position: relative;
+    top: 7px;
+    left: 26px;
+    width: 495px;
+    height: 26px;
+    border-radius: 4px;
+    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+    background-color: #b1bcc0;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+}
+
+.authorization_form_wrapper>img {
+    position: relative;
+    top: 6px;
+    left: 7px;
+}
+
+input[name="username"] {
+    position: relative;
+    top: -2px;
+    left: 6px;
+    padding-left: 4px;
+}
+
+input[name="password"] {
+    position: relative;
+    top: -2px;
+    left: 9px;
+    padding-left: 4px;
+}
+
+input[name="username"],
+input[name="password"] {
+    width: 108px;
+    height: 13px;
+    color: #97a2a6;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: -0.2px;
+    border: 1px solid #9ba1a3;
+    background-color: white;
+}
+
+input[name="login"] {
+    position: relative;
+    top: -1px;
+    left: 7px;
+    color: white;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+    border: none;
+    text-decoration: none;
+    background: none;
+}
+
+.registration_text_font {
+    position: relative;
+    top: -1px;
+    left: 2px;
+    color: white;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+}
+
+/*     Decoration border between "вход" and "регистрация" elements    */
+
+.decoration_border {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    width: 1px;
+    height: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #bec6c9;
+}
+
+.forgot_pwd_text_font {
+    position: relative;
+    top: -1px;
+    left: 19px;
+    color: #bfbfbf;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/*     1.3 Site navigation box and internal components of the wrapper      */
+
+.site_nav_box {
+    float: right;
+    position: relative;
+    top: 9px;
+    left: -7px;
+    width: 75px;
+    height: 19px;
+    border: 1px solid #bdc4c7;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px -4px rgba(0, 0, 0, 0.75);
+}
+
+.home_link {
+    position: relative;
+    top: 0px;
+    left: 8px;
+}
+
+.sitemap_link {
+    position: relative;
+    top: 1px;
+    left: 12px;
+}
+
+.message_link {
+    position: relative;
+    top: 0px;
+    left: 17px;
+}
+
+/*     2. MAIN BANNER STYLE&SIZE     */
+
+.main_banner {
+    width: 909px;
+    height: 237px;
+    margin: 4px auto 0 auto;
+}
+
+/*     3. MAIN MENU STYLE&SIZE (navigation bar (menu), cart, price)     */
+
+/*     3.1 Menu box wrapper      */
+
+nav {
+    width: 910px;
+    height: 35px;
+    margin: 6px auto 10px auto;
+    border: 1px solid #0d1642;
+    border-radius: 5px;
+    box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    background-image: linear-gradient(to top, black 0%, #576068 100%);
+    box-sizing: border-box;
+}
+
+/*     3.2 Menu items     */
+
+.menu,
+.menu>li,
+.cart,
+.cart>p {
+    display: inline-block;
+    font-size: 0px;
+}
+
+.menu>li>a {
+    display: block;
+    height: 26px;
+    margin: 3.5px auto;
+    color: #b1bcc0;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.submenu_1 {
+    margin-left: 126px;
+}
+
+.menu_about {
+    width: 125px;
+    letter-spacing: -0.3px;
+}
+
+.submenu_2 {
+    margin-left: 1px;
+}
+
+.menu_payment {
+    width: 85px;
+    letter-spacing: -0.3px;
+}
+
+.submenu_3 {
+    margin-left: 3px;
+}
+
+.menu_delivery {
+    width: 100px;
+    letter-spacing: -0.2px;
+}
+
+.submenu_4 {
+    margin-left: 2px;
+}
+
+.menu_articles {
+    width: 85px;
+    letter-spacing: -0.3px;
+}
+
+.submenu_5 {
+    margin-left: 0px;
+}
+
+.menu_contacts {
+    width: 95px;
+    letter-spacing: -0.3px;
+}
+
+.menu>li>a:hover {
+    color: white;
+    border-radius: 13px;
+    background-color: #f60303;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+}
+
+/*     3.3 Cart box wrapper     */
+
+.cart {
+    float: right;
+    width: 280px;
+    line-height: 30px;
+}
+
+.cart>a {
+    position: relative;
+    top: 5px;
+    left: 54px;
+}
+
+/*     3.4 Cart text items     */
+
+.goods {
+    position: relative;
+    top: 0px;
+    left: 61px;
+    letter-spacing: 0.5px;
+}
+
+.amount {
+    position: relative;
+    top: 1px;
+    left: 63px;
+}
+
+.sum_text {
+    position: relative;
+    left: 78px;
+}
+
+.total {
+    position: relative;
+    top: 1px;
+    left: 90px;
+    letter-spacing: 0.4px;
+}
+
+.amount,
+.total {
+    color: #0d5a8f;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.goods,
+.sum_text {
+    color: #929b9f;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+/*     4. SEARCH BAR STYLE&SIZE     */
+
+/*     4.1 Search bar wrapper     */
+
+.search_bar {
+    width: 910px;
+    height: 136px;
+    margin: 10px auto 12px auto;
+}
+
+.search_panel_1 {
+    float: left;
+    width: 412px;
+    height: 133px;
+    margin-left: 4px;
+    border: 1px solid #9c9c9d;
+    border-radius: 17px;
+    box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
+}
+
+/*     4.2 Search bar description text ("Диски", "Поиск по автомобилю", "Шины")     */
+
+.search_disk {
+    position: relative;
+    top: 2px;
+    left: 21px;
+    color: #154468;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.search_auto {
+    position: relative;
+    left: 88px;
+    color: #154467;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+}
+
+.search_tires {
+    position: relative;
+    left: 161px;
+    color: #154468;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+}
+
+/*     4.3 Search bar form and internal components     */
+
+.search_panel_1>form {
+    width: 375px;
+}
+
+.search_panel_1>form>label {
+    display: inline-block;
+}
+
+select[name="disk_mark"],
+select[name="disk_model"],
+select[name="disk_complectation"],
+select[name="tire_model"],
+select[name="tire_mark"],
+select[name="tire_complectation"] {
+    width: 101px;
+    height: 17px;
+    background-color: white;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+    border: none;
+}
+
+select[name="disk_year"],
+select[name="tire_year"] {
+    width: 57px;
+    height: 17px;
+    background-color: white;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+    border: none;
+}
+
+.label_font {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.label_gray_font {
+    color: #77858b;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+/*     4.3.1 Form elements position    */
+
+.disk_mark_label {
+    position: relative;
+    top: 6px;
+    left: 18px;
+}
+
+.disk_mark_label>.label_gray_font {
+    margin-left: 2px;
+    margin-right: 17px;
+}
+
+.tires_mark_label {
+    position: relative;
+    top: 4px;
+    left: 43px;
+}
+
+.tires_mark_label>.label_gray_font {
+    margin-left: 2px;
+    margin-right: 17px;
+}
+
+.disk_model_label {
+    position: relative;
+    top: 9px;
+    left: 18px;
+    width: 55px;
+    height: 20px;
+}
+
+.disk_model_label>.label_font {
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+.disk_model_label>.label_gray_font {
+    position: relative;
+    top: 4px;
+    left: -36px;
+    letter-spacing: 0.2px;
+}
+
+select[name="disk_model"] {
+    position: relative;
+    top: 10px;
+    left: 34px;
+}
+
+.tires_model_label {
+    position: relative;
+    top: 7px;
+    left: 59px;
+    width: 55px;
+    height: 20px;
+}
+
+.tires_model_label>.label_font {
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+.tires_model_label>.label_gray_font {
+    position: relative;
+    top: 4px;
+    left: -36px;
+    letter-spacing: 0.2px;
+}
+
+select[name="tire_model"] {
+    position: relative;
+    top: 8px;
+    left: 75px;
+}
+
+.disk_year_label {
+    position: relative;
+    top: 11px;
+    left: 18px;
+    height: 20px;
+}
+
+.disk_year_label>.label_font {
+    position: relative;
+    top: -4px;
+    left: 0px;
+    letter-spacing: 0.4px;
+}
+
+.disk_year_label>.label_gray_font {
+    position: relative;
+    top: 4px;
+    left: -61px;
+    letter-spacing: 0.4px;
+}
+
+select[name="disk_year"] {
+    position: relative;
+    top: 12px;
+    left: -28px;
+}
+
+.tires_year_label {
+    height: 20px;
+    position: relative;
+    top: 9px;
+    left: 40px;
+}
+
+.tires_year_label>.label_font {
+    position: relative;
+    top: -4px;
+    left: 0px;
+}
+
+.tires_year_label>.label_gray_font {
+    position: relative;
+    top: 4px;
+    left: -56px;
+    letter-spacing: 0.4px;
+}
+
+select[name="tire_year"] {
+    position: relative;
+    top: 10px;
+    left: -2px;
+}
+
+.disk_complectation_label {
+    position: relative;
+    top: 13px;
+    left: 18px;
+    height: 20px;
+}
+
+select[name="disk_complectation"] {
+    position: relative;
+    top: 1px;
+}
+
+.tires_complectation_label {
+    position: relative;
+    top: 11px;
+    left: 43px;
+    height: 20px;
+}
+
+select[name="tire_complectation"] {
+    position: relative;
+    top: 1px;
+}
+
+#search_button {
+    position: relative;
+    top: 15px;
+    left: 336px;
+    color: #154467;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+/*     5. MAIN CONTENT STYLE&SIZE     */
+
+/*     5.1 Container box wrapper     */
+
+.container_box {
+    width: 940px;
+    margin: 13px auto 5px auto;
+    font-size: 0px;
+    text-align: center;
+}
+
+
+/*     5.2 Left box (aside > catalog: tires, disks, bolts)     */
+
+/*     5.2.1 Left box wrapper     */
+
+.left_box {
+    display: inline-block;
+    width: 21%;
+    height: 628px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+/*     5.2.2 Left box h2 style&size     */
+
+.left_box_h2 {
+    width: 180px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid #79878d;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+}
+
+.left_box_h2>.h2_circle_span {
+    margin-top: 1px;
+    margin-left: -7px;
+}
+
+.left_box_h2>.h2_circle_span>img {
+    margin-top: 4px;
+}
+
+.left_box_h2>.h2_text_span {
+    position: relative;
+    top: -2px;
+    left: 4px;
+    color: #114165;
+    font-size: 13px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    letter-spacing: -0.2px;
+}
+
+/*     5.2.3 Left box - h3 style&size (tires, disks, bolts)  */
+
+.left_box_h3 {
+    width: 148px;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #79878d;
+    border-radius: 16px;
+}
+
+.left_box_h3>img {
+    margin-top: 1px;
+    margin-left: -71px;
+}
+
+.h3_text_span {
+    position: relative;
+    top: -5px;
+    left: 2px;
+    color: #114165;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h3_text_position_fix {
+    position: relative;
+    top: -6px;
+    left: 4px;
+    color: #114165;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.left_box_h3_tires {
+    margin-top: 13px;
+    margin-left: 12px;
+}
+
+.left_box_h3_disk {
+    margin-left: 12px;
+}
+
+.left_box_h3_bolts {
+    margin-top: -1px;
+    margin-left: 12px;
+}
+
+.left_box_nav>li {
+    background: url(../img/CatalogDotGray.png) 10px 1px no-repeat;
+    background-size: 7px;
+    width: 145px;
+    height: 25px;
+}
+
+.left_box_nav>li:hover {
+    background: url(../img/CatalogDot.png) 10px 1px no-repeat;
+    background-size: 7px;
+}
+
+.catalog_link_1,
+.catalog_link_2,
+.catalog_link_3,
+.catalog_link_4 {
+    position: relative;
+}
+
+.catalog_link_1 {
+    top: 7px;
+    left: 38px;
+}
+.catalog_link_2,
+.catalog_link_3 {
+    top: 8px;
+    left: 38px;
+}
+
+.catalog_link_4 {
+    top: 9px;
+    left: 38px;
+}
+
+.left_box_nav>li>a {
+    display: block;
+    width: 145px;
+    height: 18px;
+    color: #465961;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+
+.left_box_nav>li>a:hover {
+    letter-spacing: 0px;
+    color: #0c3256;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.left_box_nav>li>a:hover>.hovered_text {
+    position: relative;
+    top: -2px;
+    left: 4px;
+}
+
+/*     5.3 Main style&size     */
+
+main {
+    display: inline-block;
+    width: 527px;
+    height: 628px;
+    font-size: 10px;
+    vertical-align: top;
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(35, 75, 93, 0.24) 0%, rgba(201, 207, 209, 0.24) 100%);
+    border-radius: 3px;
+}
+
+main>figure {
+    display: inline-block;
+    position: relative;
+}
+
+figure>figcaption>.img_wrapper {
+    width: 136px;
+    height: 127px;
+    background-color: white;
+    border: 1px solid #a4aeb1;
+    border-radius: 7px;
+}
+
+.img_wrapper>img {
+    margin-top: 5px;
+    margin-right: 3px;
+}
+.product_name_font>a {
+    color: #206988;
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.product_type_font {
+    color: #1f2528;
+    font-size: 13px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-weight: 400;
+}
+.product_price_font {
+    color: #114165;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.price_currency {
+    position: relative;
+    color: #114165;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.column_1_price_posfix {
+    position: relative;
+    top: 4px;
+    left: 2px;
+    letter-spacing: 0.4px;
+}
+.column_2_price_posfix {
+    position: relative;
+    top: 5px;
+    left: 2px;
+    letter-spacing: 0.4px;
+}
+.column_3_price_posfix {
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+.column_1_posfix {
+    top: 4px;
+    left: 8px;
+    letter-spacing: 0.3px;
+}
+.column_2_posfix {
+    top: 6px;
+    left: 10px;
+    letter-spacing: 0.3px;
+}
+.column_3_posfix {
+    top: 5px;
+    left: 10px;
+    letter-spacing: 0.3px;
+}
+.product_1 {
+    top: 17px;
+    left: -31px;
+}
+.product_1_type {
+    margin-left: 5px;
+    letter-spacing: -0.1px;
+}
+.product_2 {
+    top: 16px;
+    left: -4px;
+}
+.product_2_name {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_2_type {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_3 {
+    top: 16px;
+    left: 23px;
+}
+.product_3_name {
+    margin-left: 4px;
+}
+.product_3_type {
+    letter-spacing: -0.1px;
+}
+.product_4 {
+    top: 46px;
+    left: -31px;
+}
+.product_4_type {
+    margin-left: 5px;
+    letter-spacing: -0.1px;
+}
+.product_5 {
+    top: 45px;
+    left: -5px;
+}
+.product_5_name {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_5_type {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_6 {
+    top: 45px;
+    left: 23px;
+}
+.product_6_name {
+    margin-left: 4px;
+}
+.product_6_type {
+    letter-spacing: -0.1px;
+}
+.product_7 {
+    top: 76px;
+    left: -31px;
+}
+.product_7_name {
+    margin-left: -3px;
+}
+.product_7_type {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_8 {
+    top: 76px;
+    left: -4px;
+}
+.product_8_name {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_8_type {
+    margin-left: 3px;
+    letter-spacing: -0.1px;
+}
+.product_9 {
+    top: 77px;
+    left: 23px;
+}
+.product_9_name {
+    margin-left: 4px;
+}
+.product_9_type {
+    letter-spacing: -0.1px;
+}
+
+/*     5.4 Right box (aside > brends: tires, disks)     */
+
+/*     5.4.1 Right box wrapper     */
+
+.right_box {
+    display: inline-block;
+    vertical-align: top;
+    width: 21%;
+    height: 628px;
+    margin-left: 5px;
+}
+
+/*     5.4.2 Right box h2 style&size     */
+
+.right_box_h2 {
+    width: 180px;
+    height: 25px;
+    margin-top: 2px;
+    margin-left: 3px;
+    border: 1px solid #79878d;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+}
+.right_box_h2>.h2_circle_span {
+    margin-top: 2px;
+    margin-left: -93px;
+}
+.right_box_h2>.h2_circle_span>img {
+    margin-top: 4px;
+}
+.right_box_h2>.h2_text_span {
+    position: relative;
+    top: -2px;
+    left: 6px;
+    color: #114165;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    letter-spacing: -0.2px;
+}
+
+/*     5.4.3 Right box - h3 style&size (tires, disks)  */
+
+.right_box_h3 {
+    width: 135px;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #79878d;
+    border-radius: 16px;
+}
+.right_box_h3>img {
+    margin-top: 1px;
+    margin-left: -60px;
+}
+.right_box_h3>.h3_text_span {
+    position: relative;
+    top: -6px;
+    left: 4px;
+    color: #114165;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.right_box_h3>.h3_text_position_fix {
+    position: relative;
+    top: -6px;
+    left: 6px;
+    color: #114165;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.right_box_h3_tires {
+    margin-top: 15px;
+    margin-left: 18px;
+}
+.right_box_h3_disk {
+    margin-top: 38px;
+    margin-left: 17px;
+}
+.checkbox_text {
+    color: #465961;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 11px;
+}
+input[type="checkbox"] {
+    width: 9px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid #114165;
+    box-shadow: inset 0.5px 0.9px 1px rgba(0, 0, 0, 0.75);
+}
+
+.right_box>form>label {
+    display: block;
+    width: 90px;
+}
+
+.right_box>form>input[type="submit"] {
+    position: relative;
+    top: 44px;
+    left: -30px;
+    width: 82px;
+    height: 28px;
+    color: #e5e9ea;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: black;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    border: 1px solid #a7abae;
+    border-radius: 13px;
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.25);
+}
+
+.brand_checkbox_1,
+.brand_checkbox_2,
+.brand_checkbox_3,
+.brand_checkbox_4,
+.brand_checkbox_5,
+.brand_checkbox_6 {
+    position: relative;
+}
+.brand_checkbox_1 {
+    top: 6px;
+    left: 19px;
+}
+.brand_checkbox_2 {
+    top: 15px;
+    left: 19px;
+}
+.brand_checkbox_3 {
+    top: 24px;
+    left: 19px;
+}
+.brand_checkbox_4 {
+    top: 8px;
+    left: 19px;
+}
+.brand_checkbox_5 {
+    top: 17px;
+    left: 19px;
+}
+.brand_checkbox_6 {
+    top: 26px;
+    left: 19px;
+}
+
+/*     6. BRAND BOX STYLE&SIZE    */
+
+.brand_box {
+    width: 910px;
+    height: 85px;
+    margin: 0 auto 1px auto;
+}
+
+.brand_search {
+    font-size: 0px;
+    text-align: center;
+}
+
+.brand_search>li {
+    display: inline-block;
+    position: relative;
+}
+
+.brand_search>li>a {
+    display: block;
+}
+
+.brand_item_1 {
+    top: 32px;
+    left: -46px;
+}
+.brand_item_2 {
+    top: 25px;
+    left: -34px;
+}
+.brand_item_3 {
+    top: 32px;
+    left: -21px;
+}
+.brand_item_4 {
+    top: 31px;
+    left: -6px;
+}
+.brand_item_5 {
+    top: 25px;
+    left: 6px;
+}
+.brand_item_6 {
+    top: 34px;
+    left: 19px;
+}
+.brand_item_7 {
+    top: 26px;
+    left: 32px;
+}
+.brand_item_8 {
+    top: 25px;
+    left: 47px;
+}
+
+/*     7. FOOTER STYLE&SIZE     */
+
+footer {
+    width: 910px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #213a4d;
+    border: 1px solid #242a3c;
+}
+
+.footer_menu {
+    margin-top: 8px;
+    text-align: center;
+}
+.footer_menu>li {
+    display: inline-block;
+}
+
+.footer_menu>li>a {
+    display: block;
+    color: #bec6c9;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer_menu>li>a:hover {
+    color: #52abcb;
+ }
+.footer_menu_item_1,
+.footer_menu_item_2,
+.footer_menu_item_3,
+.footer_menu_item_4 {
+    position: relative;
+}
+.footer_menu_item_1 {
+    left: -8px;
+    letter-spacing: 0.1px;
+}
+.footer_menu_item_2 {
+    left: -1px;
+    letter-spacing: 0.2px;
+    word-spacing: 8px;
+}
+.footer_menu_item_3 {
+    left: 7px;
+    letter-spacing: 0.2px;
+    word-spacing: 8px;
+}
+.footer_menu_item_4 {
+    left: 16px;
+    letter-spacing: 0.3px;
+    word-spacing: 11px;
+}
+small {
+    display: block;
+    margin-top: 15px;
+    margin-right: 2px;
+    color: #7f4740;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.1px;
+}
